@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dteldb
+    username: postgres
+    password: Bil@1985
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      call-events: call-events-local
+    consumer:
+      group-id: sfr-group
+      #auto-offset-reset: earliest
+    #producer:
+      #key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
